@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+
+        <div class="container">
+            <h3>Bookmarker</h3>
+           <hr>
+           <div class="bga text-center ">
+            <h2 class="p-3">Bookmark your favorite sites</h2>
+            <div action="" class="p-4 pb-5">
+                <label class="p-2" for="">Site Name</label>
+                <input oninput="" id="Bookmark" class="form-control w-50 mx-auto" placeholder="Bookmark Name"></input>
+                <div id="meseg">
+
+                </div>
+                <label class="p-2"  for="">Site Url</label>
+                <input id="Website" class="form-control w-50 mx-auto" placeholder="Website Url"></input>
+                <div class="pt-3">
+                <button onclick="AddProduct()" id="Add" class="btn btn-info rounded-5 d-inline-block ">Submit</button> 
+                <button onclick="UpdateProduct(this.value)" id="Update" class="btn btn-info rounded-5 d-none">Update</button> 
+                <button onclick=" Clear()" id="Clear" class="btn btn-info rounded-5 d-inline-block">Clear ALL</button> 
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="mx-auto w-50 p-5">
+            <label for="We">search :</label>
+            <input oninput="searchProduct(this.value)" id="We" class="form-control  mx-auto" placeholder="inter your Bookmark ">
+        </div>
+
+        <div id="Submit" class="container mt-5">
+            
+            <hr>
+            <p>© 2019 Bookmarker Inc.</p>
+        </div>
+          
+          
+        <script src="js/main.js"></script>
+    </body>
+</html>
